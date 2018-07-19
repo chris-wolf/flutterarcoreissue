@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".LauncherActivity"
+	tools:showIn="@layout/activity_launcher">
+
+	<Button
+		android:id="@+id/arButton"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:text="Launch AR Activity"/>
+
+	<Button
+		android:id="@+id/flutterButton"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:layout_marginTop="10dp"
+		app:layout_constraintTop_toBottomOf="@id/arButton"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:text="Launch Flutter Activity"/>
+
+</android.support.constraint.ConstraintLayout>
