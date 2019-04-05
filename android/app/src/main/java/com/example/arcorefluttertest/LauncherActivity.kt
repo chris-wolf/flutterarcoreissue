@@ -12,7 +12,7 @@ class LauncherActivity : AppCompatActivity() {
 		setContentView(R.layout.activity_launcher)
 
 		arButton.setOnClickListener { view ->
-			startActivity(Intent(this, ARActivity::class.java))
+			startActivity(Intent(this, HelloSceneformActivity::class.java))
 		}
 		flutterButton.setOnClickListener { view ->
 			startActivity(Intent(this, MainActivity::class.java))
